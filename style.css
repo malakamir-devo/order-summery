@@ -1,0 +1,170 @@
+/******************
+IMPORTS
+*****************/
+
+@font-face {
+    font-family: 'Redhat';
+    src: url(./font/RedHatDisplay-Medium.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'RedhatBold';
+    src: url(./font/RedHatDisplay-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'RedhatExtra';
+    src: url(./font/RedHatDisplay-ExtraBold.ttf);
+    font-weight: 900;
+}
+
+
+/******************
+REST
+*****************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+
+img {
+    max-width: 100%;
+}
+
+
+/******************
+Global
+*****************/
+
+
+
+:root {
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+    font-family: 'Redhat';
+    font-size: 16px;
+    background-color: var(--Pale-blue);
+    text-align: center;
+}
+
+/******************
+PAGE CONTENT
+*****************/
+
+main {
+    height: 100dvh;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.card {
+    width: 400px;
+    background-color: var(--Very-pale-blue);
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 0px var(--Desaturated-blue);
+}
+
+.bg-img {
+    background-image: url(./images/illustration-hero.svg);
+    height: 170px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.info {
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.text .title {
+    font-weight: 900;
+    color: var(--Dark-blue);
+    margin-bottom: 10px;
+}
+
+.text p {
+    color: var(--Desaturated-blue);
+
+}
+
+.text {
+    margin-bottom: 20px;
+}
+
+.main-plan-box {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: var(--Pale-blue);
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.plan-box-1 {
+    display: flex;
+}
+
+
+
+.plan-1 p {
+    color: var(--Desaturated-blue);
+}
+
+.main-plan-box button {
+    color: var(--Bright-blue);
+    font-weight: 700;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.button-container a {
+    width: 100%;
+}
+
+.button-container a:first-child {
+    background-color: var(--Bright-blue);
+    color: white;
+    padding: 15px 52px;
+    border-radius: 6px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    font-size: 1em;
+}
+
+.button-container a:nth-child(2) {
+    color: #000;
+    font-weight: 700;
+    font-size: .9em;
+}
